@@ -1,0 +1,14 @@
+resources:
+- ../../base
+- namespace.yaml
+
+namespace: production
+
+patches:
+- path: transactions-svc-prod.yaml
+- path: transactions-deploy-prod.yaml
+
+secretGenerator:
+- name: db-password
+  literals:
+  - password=tOCiONSgruai

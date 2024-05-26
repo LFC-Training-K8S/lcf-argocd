@@ -1,0 +1,5 @@
+resources:
+- postgres-svc.yaml
+- postgres.yaml
+- transactions-svc.yaml
+- transactions-deploy.yaml

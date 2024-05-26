@@ -1,0 +1,16 @@
+resources:
+- ../../base
+- adminer-svc.yaml
+- adminer.yaml
+- namespace.yaml
+
+namespace: dev
+
+patches:
+- path: transactions-svc-dev.yaml
+- path: transactions-deploy-dev.yaml
+
+secretGenerator:
+- name: db-password
+  literals:
+  - password=Azerty@12
